@@ -34,7 +34,7 @@ export default function Navbar() {
   };
 
   // Set active link on click
-  const handleClick = (index) => {
+  const handleClick = (index: any) => {
     setActiveIndex(index);
   };
 
