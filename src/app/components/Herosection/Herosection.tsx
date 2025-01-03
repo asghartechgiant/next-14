@@ -77,7 +77,7 @@ export default async function HeroSection() {
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
-          {data.map((pro, index) => (
+          {data.map((pro: any, index: any) => (
             <div
               key={index}
               className="bg-white shadow-2xl rounded-lg overflow-hidden group transform hover:scale-105 transition-all duration-300 hover:shadow-2xl"
