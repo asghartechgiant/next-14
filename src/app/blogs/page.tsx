@@ -28,7 +28,7 @@ export default async function BlogListPage() {
       {/* Blog Posts Grid */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {data.map((post, index) => (
+          {data.map((post: any, index: any) => (
             <div
               key={index}
               className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-purple-50 cursor-pointer"
@@ -58,7 +58,7 @@ export default async function BlogListPage() {
                 {/* Categories */}
                 <p className="text-sm text-gray-600 mb-4">
                   <span className="font-medium">Categories:</span>{" "}
-                  {post.categories?.map((category, idx) => (
+                  {post.categories?.map((category: any, idx: any) => (
                     <span
                       key={idx}
                       className="text-blue-600 hover:text-blue-800 cursor-pointer transition-colors duration-300"
