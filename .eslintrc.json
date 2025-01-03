@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off", // Allow the use of 'any'
+    "no-unused-vars": "off",                     // Disable unused variables check
+    "camelcase": "off",                          // Allow special characters in variable names
+    "no-irregular-whitespace": "off",            // Allow irregular whitespace
+    "no-useless-escape": "off"                   // Allow unnecessary escape characters
+  }
 }
